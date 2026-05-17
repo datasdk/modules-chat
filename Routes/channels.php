@@ -1,21 +1,10 @@
 <?php
-
 use Illuminate\Support\Facades\Broadcast;
-
-/*
-|--------------------------------------------------------------------------
-| Broadcast Channels
-|--------------------------------------------------------------------------
-|
-| Here you may register all of the event broadcasting channels that your
-| application supports. The given channel authorization callbacks are
-| used to check if an authenticated user can listen to the channel.
-|
-*/
+use Illuminate\Support\Facades\Route;
 
 
-Broadcast::channel('channel', function ($user, $orderId) {
+Broadcast::channel('chat-channel.{chat_id}', function ($user,int $chat_id) {
+
     return true;
 });
 
-?>
