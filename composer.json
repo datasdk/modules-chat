@@ -1,10 +1,13 @@
 {
-    "name": "nwidart/chat",
+    "name": "datasdk/chat-module",
+    "type": "laravel-module",
+    "license": "proprietary",
+
     "description": "",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Kasper L. Kristiansen",
+            "email": "info@datas.dk"
         }
     ],
     "extra": {
